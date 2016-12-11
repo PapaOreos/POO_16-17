@@ -22,6 +22,7 @@ using namespace std;
 
 string cin_str();
 int filtra_comando(string cmd);
+void clear_line(int y, int x);
 
 
 #endif /* UTIL_H */

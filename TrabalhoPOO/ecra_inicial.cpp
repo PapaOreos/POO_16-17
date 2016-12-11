@@ -35,12 +35,9 @@ void set_tamanho(int &parent_y, int &parent_x){
 
         //ir limpando para garantir que nao fica "feio" com o resize
         getch();
-        move((parent_y/2)-1,   (parent_x/2)-17);
-        clrtoeol();
-         move((parent_y/2),    (parent_x/2)-10);
-        clrtoeol();
-         move((parent_y/2)+1,  (parent_x/2)-12);
-        clrtoeol();
+        clear_line((parent_y/2)-1,   (parent_x/2)-17);
+        clear_line((parent_y/2),   (parent_x/2)-10);
+        clear_line((parent_y/2)+1,   (parent_x/2)-12);
         refresh();
 
         //condição de saida do ciclo (condição dentro do ciclo aparenta ter problemas)
@@ -114,7 +111,6 @@ void print_ecra(int &y, int &x){
     mvwprintw(stdscr,   14,     colum[0],   "exit ");               mvwprintw(stdscr,   14,      colum[1],     "");                     mvwprintw(stdscr,   14,      colum[2],     "Sair");
     
     mvwprintw(stdscr,   y-2,    colum[0],  "Comando > ");
-    curs_set(1); 
-    move(y-2,    colum[0]+10);
-    clrtoeol();
+    curs_set(1);
+    clear_line(y-2,    colum[0]+10);
 }

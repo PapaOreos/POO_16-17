@@ -40,10 +40,12 @@ int main() {
     
     switch (escolha){
         case 1:
+            clear_line(y-5, 1);
             mvprintw(y-5, 1, "Escolha = dim");
         break;   
         
         default:
+            clear_line(y-5, 1);
             mvprintw(y-5, 1, "Error?!");
     }
     

@@ -43,4 +43,12 @@ int filtra_comando(string cmd){
     
     return escolha;
 }
+
+//---------------------------------------------------------
+
+void clear_line(int y, int x){
     
+     move(y,x);
+     clrtoeol();   
+    
+}
