@@ -18,12 +18,17 @@ using namespace std;
 
 int main() {
     
+    //variaveis para menu
     int escolha;
     string comando;
     
+    //variaveis para ecra
     int x, y;
      int *parent_x = &x;
      int *parent_y = &y;
+     
+     //variaveis para comando dim
+     int linhas = 0, colunas = 0; //incializadas para garantir que o cmd dim da erro mesmo que va sem lin e col
     
 
     start_ecra();
@@ -34,19 +39,27 @@ int main() {
     refresh();
     
     comando = cin_str();
-    istringstream iss(comando); //copia o comando para a stream
-    iss >> comando;//le a stream ate ao primeiro separador (' ') ficando o comando apenas com a primeira palavra
+    istringstream cmd(comando); //copia o comando para a stream
+    cmd >> comando;//le a stream ate ao primeiro separador (' ') ficando o comando apenas com a primeira palavra
     escolha = filtra_comando(comando);//iss
     
     switch (escolha){
         case 1:
-            clear_line(y-5, 1);
-            mvprintw(y-5, 1, "Escolha = dim");
+            clear_line(19, 1);
+            cmd >> linhas;
+            cmd >> colunas;
+            
+            if (linhas < 60 || colunas < 60){
+                mvprintw(19, 1, "Mapa demasiado pequeno!Tente outra vez!(min:80x80)");
+                linhas = 0;	colunas = 0;
+             break;
+            }
+            
         break;   
         
         default:
-            clear_line(y-5, 1);
-            mvprintw(y-5, 1, "Error?!");
+            clear_line(19, 1);
+            mvprintw(19, 1, "");
     }
     
     
