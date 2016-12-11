@@ -14,10 +14,19 @@
 #ifndef HEADER_H
 #define HEADER_H
 
+
 #include <cstdlib>
+#include <iostream>
 #include <unistd.h>
-#include <locale.h>
-#include <ncurses.h>
+#include <locale.h>         //para podermos ir buscar codigos ascii
+#include <ncurses.h>        //ambiente grafico
+#include "ecra_inicial.h"   //funçoes de inicializaçao do ecra
+#include "util.h"
+#include <string>
+
+
+
+
 
 #endif /* HEADER_H */
 
