@@ -18,6 +18,7 @@ using namespace std;
 
 int main() {
     
+    int escolha;
     string comando;
     
     int x, y;
@@ -33,6 +34,19 @@ int main() {
     refresh();
     
     comando = cin_str();
+    istringstream iss(comando); //copia o comando para a stream
+    iss >> comando;//le a stream ate ao primeiro separador (' ') ficando o comando apenas com a primeira palavra
+    escolha = filtra_comando(comando);//iss
+    
+    switch (escolha){
+        case 1:
+            mvprintw(y-5, 1, "Escolha = dim");
+        break;   
+        
+        default:
+            mvprintw(y-5, 1, "Error?!");
+    }
+    
     
     
     }while(comando != "exit");

@@ -21,6 +21,7 @@
 using namespace std;
 
 string cin_str();
+int filtra_comando(string cmd);
 
 
 #endif /* UTIL_H */
