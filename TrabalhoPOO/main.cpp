@@ -69,6 +69,11 @@ int main() {
             cmd_show(*parent_y, *parent_x);
         break;
         
+        case 12:
+            
+            cmd_clear(*parent_y, *parent_x);
+        break;
+        
         
         
         default:

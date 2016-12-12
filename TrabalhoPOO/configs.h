@@ -16,7 +16,7 @@
 
 int filtra_comando(string cmd);
 void cmd_show(int &y, int &x);
-
+void cmd_clear(int &y, int &x);
 
 #endif /* CONFIGS_H */
 

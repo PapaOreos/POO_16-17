@@ -23,7 +23,7 @@
 #include "ecra_inicial.h"   //funçoes de inicializaçao do ecra
 #include "util.h"
 #include <string>
-
+#include "configs.h"
 
 
 

@@ -19,7 +19,6 @@
                    projectFiles="true">
       <itemPath>configs.cpp</itemPath>
       <itemPath>ecra_inicial.cpp</itemPath>
-      <itemPath>globals.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>util.cpp</itemPath>
     </logicalFolder>
@@ -55,8 +54,6 @@
       <item path="ecra_inicial.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ecra_inicial.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="globals.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="globals.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -96,8 +93,6 @@
       <item path="ecra_inicial.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ecra_inicial.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="globals.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="globals.h" ex="false" tool="3" flavor2="0">
       </item>
