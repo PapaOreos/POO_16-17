@@ -14,6 +14,21 @@
 #ifndef GLOBALS_H
 #define GLOBALS_H
 
+#include <string>
+
+using namespace std;
+
+const string pt_cmd_dim =       "dim";
+const string pt_cmd_moedas =    "moedas";
+const string pt_cmd_oponentes = "oponentes";
+const string pt_cmd_castelo =   "castelo";
+const string pt_cmd_mkperfil =  "mkperfil";
+const string pt_cmd_addperfil = "addperfil";
+const string pt_cmd_subperfil = "subperfil";
+const string pt_cmd_rmperfil =  "rmperfil";
+const string pt_cmd_load =      "load";
+const string pt_cmd_inicio =    "inicio";
+const string pt_cmd_exit =      "exit";
 
 
 

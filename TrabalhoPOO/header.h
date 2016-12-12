@@ -14,7 +14,7 @@
 #ifndef HEADER_H
 #define HEADER_H
 
-
+#include "globals.h"
 #include <cstdlib>
 #include <iostream>
 #include <unistd.h>
