@@ -4,7 +4,9 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>configs.h</itemPath>
       <itemPath>ecra_inicial.h</itemPath>
+      <itemPath>globals.h</itemPath>
       <itemPath>header.h</itemPath>
       <itemPath>util.h</itemPath>
     </logicalFolder>
@@ -15,7 +17,9 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>configs.cpp</itemPath>
       <itemPath>ecra_inicial.cpp</itemPath>
+      <itemPath>globals.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>util.cpp</itemPath>
     </logicalFolder>
@@ -44,9 +48,17 @@
           <commandLine>-lncurses</commandLine>
         </ccTool>
       </compileType>
+      <item path="configs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="configs.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ecra_inicial.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ecra_inicial.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="globals.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="globals.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="header.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -77,9 +89,17 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="configs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="configs.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ecra_inicial.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ecra_inicial.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="globals.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="globals.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="header.h" ex="false" tool="3" flavor2="0">
       </item>

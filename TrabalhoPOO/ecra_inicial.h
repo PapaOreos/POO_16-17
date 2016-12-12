@@ -21,7 +21,7 @@ void set_tamanho(int &parent_y, int &parent_x);
 //Menu Inicial
 void print_ecra(int &y, int &x);
 void draw_borders(WINDOW *screen);
-void cmd_show(int &y, int &x);
+
 
 
 #endif /* ECRA_INICIAL_H */

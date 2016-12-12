@@ -25,25 +25,6 @@ string cin_str(){
     
 }
 
-//---------------------------------------------------------
-
-int filtra_comando(string cmd){
-    int escolha = 0;
-    
-	if      (cmd == "dim")          escolha = 1;
-	else if (cmd == "moedas")       escolha = 2;
-	else if (cmd == "oponentes")    escolha = 3;
-	else if (cmd == "castelo")      escolha = 4;
-	else if (cmd == "mkperfil")     escolha = 5;
-	else if (cmd == "addperfil")    escolha = 6;
-	else if (cmd == "subperfil")    escolha = 7;
-	else if (cmd == "rmperfil")     escolha = 8;
-	else if (cmd == "load")         escolha = 9;
-	else if (cmd == "inicio")       escolha = 10;
-        else if (cmd == "show")         escolha = 11;
-    
-    return escolha;
-}
 
 //---------------------------------------------------------
 
