@@ -40,6 +40,7 @@ int filtra_comando(string cmd){
 	else if (cmd == "rmperfil")     escolha = 8;
 	else if (cmd == "load")         escolha = 9;
 	else if (cmd == "inicio")       escolha = 10;
+        else if (cmd == "show")         escolha = 11;
     
     return escolha;
 }

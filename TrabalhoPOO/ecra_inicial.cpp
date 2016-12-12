@@ -80,6 +80,26 @@ void draw_borders(WINDOW *screen){
 //--------------------------------------------------------------------------------------------------------------------------
 
 void print_ecra(int &y, int &x){
+        
+    int new_x, new_y;
+    getmaxyx(stdscr, new_y, new_x);
+  	
+//se a janela for alterada de tamanho;
+    if (new_y != y|| new_x != x) {
+      x = new_x;
+      y = new_y;
+
+      wclear(stdscr);
+    }
+    draw_borders(stdscr);
+    mvwprintw(stdscr,   y-2,    1,  "Comando > ");
+    curs_set(1);
+    clear_line(y-2,    11);    mvprintw(y-2, x-1,   "│");  move(y-2, 11); //caso contrario a linha da border nao aparece!
+}
+
+//--------------------------------------------------------------------------------------------------------------------------
+
+void cmd_show(int &y, int &x){
     
     int colum [3] = { 1, 20, 45};
     
@@ -94,7 +114,7 @@ void print_ecra(int &y, int &x){
       wclear(stdscr);
     }
 
-    draw_borders(stdscr); 
+     
     mvwprintw(stdscr,   1,      colum[0],   "Comandos Validos");    mvwprintw(stdscr,   1,      colum[1],      "Parametros");           mvwprintw(stdscr,   1,      colum[2],      "Caracteristica");
     
     mvwprintw(stdscr,   3,      colum[0],   "dim");                 mvwprintw(stdscr,   3,      colum[1],      "linhas colunas");       mvwprintw(stdscr,   3,      colum[2],      "Define a Dimensão da planície");
@@ -108,9 +128,5 @@ void print_ecra(int &y, int &x){
     mvwprintw(stdscr,   11,     colum[0],   "load");                mvwprintw(stdscr,   11,     colum[1],     "ficheiro");              mvwprintw(stdscr,   11,     colum[2],     "Carrega Jogo");
     
     mvwprintw(stdscr,   13,     colum[0],   "inicio ");             mvwprintw(stdscr,   12,     colum[1],     "");                      mvwprintw(stdscr,   13,     colum[2],     "Inicia o Jogo");
-    mvwprintw(stdscr,   14,     colum[0],   "exit ");               mvwprintw(stdscr,   14,      colum[1],     "");                     mvwprintw(stdscr,   14,      colum[2],     "Sair");
-    
-    mvwprintw(stdscr,   y-2,    colum[0],  "Comando > ");
-    curs_set(1);
-    clear_line(y-2,    colum[0]+10);
+    mvwprintw(stdscr,   14,     colum[0],   "exit ");               mvwprintw(stdscr,   14,     colum[1],     "");                     mvwprintw(stdscr,   14,      colum[2],     "Sair");
 }
